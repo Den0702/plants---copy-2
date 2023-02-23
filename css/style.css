@@ -338,30 +338,23 @@ ul {
   flex-direction: row;
 }
 
-.col {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
+/* .col {
+  @include flexbox(nowrap, column);
+} */
 .col-33p {
   width: 33.33%;
 }
+
 @media all and (max-width: 988px) {
-  .col-33p {
+  .col-50p {
     width: 50%;
   }
 }
 @media all and (max-width: 767px) {
-  .col-33p {
+  .col {
     width: 100%;
   }
 }
-
-.col-66p {
-  width: 66.66%;
-}
-
 /* %hamburger-line {
   display: block;
   width: 40px;
