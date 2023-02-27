@@ -6,7 +6,6 @@
     @include flex-align(start, center);
 
     .service-heading {
-      padding: 0 38px;
       margin: 0; //todo: wyniesc to do styli globalnych
       color: #499A18;
     }
@@ -64,6 +63,18 @@
   }
 }
 
+@media all and (min-width: 1140px) and (max-width: 1439px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        max-width: 350px;
+        /*         .infobox {
+          padding: 0px 25px;
+        } */
+      }
+    }
+  }
+}
 
 @media all and (max-width: 1139px) {
   .service {
@@ -74,9 +85,10 @@
       margin-top: 10px;
 
       .infobox-overlay {
+
         //min-width: 350px;
-        .infobox{
-          padding: 0px 15px;
+        .infobox {
+          padding: 0px 26px;
         }
       }
     }
@@ -85,25 +97,63 @@
       .service-heading {
         width: 331px;
         margin: 0.83em 0;
-        padding: 0 30px;
       }
     }
-    
+
     .buttons-panel {
-      margin-left: 17px;
+      margin-left: 0;
       margin-top: 12px;
+
+      .service-filter-button:nth-of-type(1) {
+        margin-left: 0;
+      }
     }
   }
 }
 
-@media all and (min-width: 1140px) and (max-width: 1439px) {
+
+
+/* ponizsze media sa ustawione w kolejnosci malejacej by uwzglednic kaskadowosc */
+@media all and (max-width: 988px) {
   .service {
     .infoboxes {
       .infobox-overlay {
-        max-width: 350px;
-/*         .infobox {
-          padding: 0px 25px;
-        } */
+        .infobox {
+          padding: 0px 5.7vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 851px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 6vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 835px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 6vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 803px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 6vw;
+        }
       }
     }
   }
@@ -112,16 +162,82 @@
 @media all and (max-width: 767px) {
   .service {
     .container {
-      padding: 0;
+      padding: 20px;
     }
+
     .infoboxes {
       //@include flex-align(center, center);
 
       .infobox-overlay {
+
         //min-width: auto;
-        max-width: 289px;
+        .infobox {
+          padding: 0px 5vw;
+        }
       }
     }
 
+  }
+}
+
+@media all and (max-width: 649px) {
+  .service {
+    .container {
+      padding: 16px;
+    }
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 22vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 513px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 19vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 440px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 12vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 431px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 13vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 408px) {
+  .service {
+    .infoboxes {
+      .infobox-overlay {
+        .infobox {
+          padding: 0px 8vw;
+        }
+      }
+    }
   }
 }

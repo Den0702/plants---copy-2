@@ -141,7 +141,7 @@ const handleResponsveMenu = (e) => {
   if (target.closest('.mobile-hamburger') || target.closest('.menu')) {
     mobileHamburger.classList.toggle('active');
     menu.classList.toggle('active');
-
+    document.querySelector('body').classList.toggle('scroll-lock');
   }
 
 }

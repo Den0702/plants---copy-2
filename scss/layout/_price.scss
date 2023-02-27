@@ -17,11 +17,11 @@
       border-radius: 20px;
       padding: 40px;
       margin-top: 64px;
-      width: fit-content;
+      width: 350px;
       margin: auto;
 
       .price-list-item {
-        width: 300px;
+        width: 100%;
         //padding: 16px 40px;
         background-color: #edf2ec;
         border-radius: 20px;
@@ -165,10 +165,17 @@
       }
 
       .price-list {
-        max-width: fit-content;
+        max-width: 300px;
+        padding: 26px;
 
-        .price-list-item {
-          max-width: 300px;
+        .accordion-body {
+          &.visible {
+            margin: 0 24px 0;
+            
+            p {
+              font-size: 12px;
+            }
+          }
         }
       }
     }
@@ -187,10 +194,8 @@
 
     .prices {
       .price-list {
-        max-width: fit-content;
-        min-width: 250px;
-        padding: 26px;
-
+        max-width: 270px;
+      
         .price-list-item {
           width: 100%;
         }
@@ -198,7 +203,6 @@
         .accordion-body {
           &.visible {
             
-            margin: 0 13px 0;
             p {
               font-size: 12px;
             }
@@ -217,6 +221,12 @@
     .prices-help {
       background-image: none;
       height: auto;
+
+      .btn {
+        display: block;
+        margin: auto;
+        
+      }
     }
   }
 }

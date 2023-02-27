@@ -14,6 +14,11 @@
     background-color: initial;
     color: #E06733;
   }
+
+  &.active {
+    color: #fff;
+    background-color: #E06733;
+  }
   
 }
 
@@ -57,10 +62,7 @@
   border: none;
 }
 
-.active {
-  color: #fff;
-  background-color: #E06733;
-}
+
 
 @media all and (max-width: 649px) {
   .primary-btn {
@@ -76,9 +78,11 @@
 
   .secondary-btn {
     font-size: 17px;
-    min-width: 140px;
+    min-width: 111px;;
     border-radius: 9px;
     margin-block: 5px;
+    padding: 8px 10px;
+    margin-inline: 4px;
   }
 }
 
